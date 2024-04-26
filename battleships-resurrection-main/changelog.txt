@@ -1,0 +1,43 @@
+- 1.1.3 (SNAPSHOT)
+ - PC: updated Launch4j to 2.4.1
+ - PC: embedded JDK updated to 21+37
+ - PC: updated GoSDK for launcher to 1.21.1
+
+- 1.1.2 (24-dec-2022)
+ - PC: added AppImage PC client version for amd64
+ - PC: added Launch4j wraqpped PC client version (without embedded JDK)
+ - PC: embedded JDK updated to 19.0.1+11
+ - PC: updated GoSDK for launcher to 1.19.4
+
+- 1.1.1 (20-sep-2022)
+ - PC: windows launcher moved from i386 to amd64 to prevent antivirus false positive detection
+ - PC: embedded JDK updated to 17.0.4.1+1
+ - PC: updated GoSDK for launcher to 1.19.1
+ - PC: added MacOS DMG bundle for PC client
+
+- 1.1.0 (26-sep-2021)
+ - __PC: added serverless LAN network game mode__
+ - PC: embedded JDK updated to 17+35
+ - PC: improved send of fire request through network in the end of fire animation
+ - PC: refactoring
+
+- 1.0.3 (23-may-2021)
+ - PC: improved select of start frame for ships
+ - PC: fixed ratio of morse2 sound
+ - PC: improved select of firing ship to make better probability for air-carrier and dreadnoughts
+
+- 1.0.2 (25-mar-2021)
+
+ - PC: updated embedded OpenJDK to 16+36
+ - PC: updated Launch4J starter
+ - PC: minor improvements and fixes of form title show under different host-OS  
+ - PC: fixed show of game cursor under MacOS
+ - PC: minor refactoring
+
+- 1.0.1 (27-feb-2021)
+ - PC: reworked cursor sprite to image
+ - PC: improvements and fixes in full screen processing
+ - PC: added version for MacOS Aarch64 
+
+- 1.0.0 (31-jan-2021)
+ - initial release of restored version with old GFX play-room server support

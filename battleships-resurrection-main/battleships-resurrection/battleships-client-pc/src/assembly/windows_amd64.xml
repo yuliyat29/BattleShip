@@ -1,0 +1,64 @@
+<!--
+  ~   
+  ~
+  ~    This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  -->
+
+<assembly xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
+          xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+    <id>withjre_windows</id>
+
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <includeSiteDirectory>false</includeSiteDirectory>
+
+    <formats>
+        <format>zip</format>
+    </formats>
+    <files>
+        <file>
+            <source>${project.build.directory}${file.separator}${project.build.finalName}.jar</source>
+            <destName>battleships-resurrection.jar</destName>
+            <outputDirectory>${project.build.finalName}${file.separator}</outputDirectory>
+        </file>
+        <file>
+            <source>
+                ${project.basedir}${file.separator}..${file.separator}battleships-pc-win-launcher${file.separator}bin${file.separator}battleships-resurrection.exe
+            </source>
+            <destName>battleships-resurrection.exe</destName>
+            <outputDirectory>${project.build.finalName}${file.separator}</outputDirectory>
+        </file>
+    </files>
+    <fileSets>
+        <fileSet>
+            <directory>${project.build.directory}${file.separator}jinput-natives-all</directory>
+            <outputDirectory>${project.build.finalName}</outputDirectory>
+            <includes>
+                <include>*.dll</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>${project.basedir}${file.separator}src${file.separator}assembly${file.separator}windows
+            </directory>
+            <outputDirectory>${project.build.finalName}</outputDirectory>
+            <includes>
+                <include>*/**</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>${project.build.directory}${file.separator}jre_windows_amd64</directory>
+            <outputDirectory>${project.build.finalName}${file.separator}jre</outputDirectory>
+            <includes>
+                <include>*/**</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</assembly>
