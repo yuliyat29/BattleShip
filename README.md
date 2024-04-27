@@ -1,4 +1,5 @@
-![image](https://github.com/yuliyat29/BattleShips/assets/124449536/209d475e-1d5f-49e0-bb6a-1a9c2b0a20ae)# BattlerShips Game
+![image](https://github.com/yuliyat29/BattleShips/assets/124449536/209d475e-1d5f-49e0-bb6a-1a9c2b0a20ae)
+# BattlerShips Game
 
 A simple implementation of the classic Battleship game using Java.
 
